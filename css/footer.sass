@@ -1,0 +1,61 @@
+$footerHeader: rgb(201, 8, 60)
+$footerLinkColor: rgb(29, 193, 248)
+.imgSlide
+    width: 100%
+    height: 210px
+    
+    img
+        height: 200px
+        border: 2px solid #000
+        border-radius: 50%
+        transition: all cubic-bezier(.26, -0.5, .71, 1.5) 1s
+        transform: translate(-1200px, 0)
+
+footer
+    width: 100%
+    position: fixed
+    bottom: 0
+    padding-top: 20px
+    z-index: -1
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+    background: rgb(69,72,77) /* Old browsers */
+    background: -moz-linear-gradient(top,  rgb(69,72,77) 0%, rgb(0,0,0) 100%) /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgb(69,72,77) 0%,rgb(0,0,0) 100%) /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgb(69,72,77) 0%,rgb(0,0,0) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ) /* IE6-9 */
+    
+    .footer-stuff 
+        width: 660px
+        margin: auto
+        color: #fff
+        text-align: center
+        
+        strong
+            padding: 7px 5px
+            margin-bottom: 10px
+            display: block
+            font-size: 18px
+            font-weight: 100
+            color: lighten($footerHeader, 10%)
+    
+        ul
+            list-style: none
+    
+        a 
+            text-decoration: none
+            color: lighten($footerLinkColor, 25%)
+            font-size: 12px
+            transition: all cubic-bezier(.04, .85, .54, .99) 1s
+            
+            &:hover
+                color: darken($footerLinkColor, 15%)
+            
+        p
+            text-align: justify
+            padding: 2px 5px
+            color: $footerLinkColor
+            
+            
+.main-content 
+    color: #000
